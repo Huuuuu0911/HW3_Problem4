@@ -57,7 +57,6 @@ fun ResponsiveLayoutScreen() {
     var selectedId by rememberSaveable { mutableIntStateOf(0) }
     val selected = navItems.first { it.id == selectedId }
 
-    // Breakpoint behavior: phone vs tablet (no BoxWithConstraints)
     val screenWidthDp = LocalConfiguration.current.screenWidthDp
     val isWide = screenWidthDp >= 600
 
@@ -219,7 +218,7 @@ private fun WideTwoPane(
 
                 Divider()
 
-                // Requirement: LazyColumn in wide left pane
+                // LazyColumn in wide left pane
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(navItems) { item ->
                         val isSelected = item.id == selectedId
@@ -261,11 +260,11 @@ private fun WideTwoPane(
 private fun DetailPane(item: NavItem) {
     val scrollState = rememberScrollState()
 
-    // Requirement: right pane uses Box + Column mixed (Box outside, Card+Column inside)
+    // right pane uses Box + Column mixed (Box outside, Card+Column inside)
     Card(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(scrollState), // Requirement: demonstrate verticalScroll
+            .verticalScroll(scrollState), // demonstrate verticalScroll
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
         Column(modifier = Modifier.padding(20.dp)) {
@@ -336,7 +335,6 @@ private fun DetailPane(item: NavItem) {
             Divider()
             Spacer(Modifier.height(12.dp))
 
-            // Extra content to prove scroll works
             Text(
                 text = List(25) { "• Detail line ${it + 1}" }.joinToString("\n"),
                 style = MaterialTheme.typography.bodySmall
