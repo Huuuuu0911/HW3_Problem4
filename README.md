@@ -24,3 +24,27 @@ This implementation uses `LocalConfiguration` to compute a breakpoint at **600dp
 ```kotlin
 val screenWidthDp = LocalConfiguration.current.screenWidthDp
 val isWide = screenWidthDp >= 600
+```
+
+## Material 3 Components Used
+
+The screen includes the following Material 3 components:
+
+- Scaffold
+- CenterAlignedTopAppBar
+- FloatingActionButton
+- ListItem
+- Card
+- ElevatedCard
+- AssistChip
+- SuggestionChip
+- LinearProgressIndicator
+- Switch
+- Slider
+- OutlinedTextField
+- Button
+- OutlinedButton
+- Divider
+
+
+
