@@ -64,3 +64,9 @@ Below is the screenshot of the app:
 3. Run `MainActivity`  
 
 ## AI Disclosure
+
+ChatGPT was used as a supplementary tool during development for clarification of responsive layout techniques, breakpoint handling strategies, and modifier usage in Jetpack Compose.
+
+The overall layout structure, state management logic, two-pane composition design, and Material 3 component integration were independently implemented and tested in Android Studio. The responsive breakpoint behavior, weight-based space distribution, scroll handling, and UI state interactions were manually designed, adjusted, and refined.
+
+AI assistance was used as a learning and refinement resource rather than as a substitute for independent development.
