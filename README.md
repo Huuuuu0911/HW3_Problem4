@@ -47,4 +47,20 @@ The screen includes the following Material 3 components:
 - Divider
 
 
+## Screenshots
 
+Below is the screenshot of the app:
+
+**Phone Screen**
+   ![Full Screen](Phone.png)
+
+**Tablet Screen**
+   ![Full Screen](Tablet.png)
+
+## How to Run
+
+1. Open the project in Android Studio  
+2. Use an emulator with API 34  
+3. Run `MainActivity`  
+
+## AI Disclosure
